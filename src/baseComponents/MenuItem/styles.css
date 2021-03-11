@@ -1,0 +1,15 @@
+/* BOM model */
+
+.menu-item {
+    padding: var(--Nav-item-padding);
+    width: 150px; /* assuming the label occupies max of 150px */
+}
+
+.menu-item .link {
+    color: inherit;
+
+    display: inline-flex;
+    align-items: flex-start;
+
+    text-decoration: none;
+}

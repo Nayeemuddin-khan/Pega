@@ -1,0 +1,45 @@
+/* BOM Model */
+
+.accordion {
+    width: 150px;
+}
+
+.accordion .label {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+
+    padding: var(--Nav-item-padding);
+}
+
+.accordion .container {
+    overflow: hidden;
+}
+
+.accordion .open-up {
+    animation: open-up 0.8s ease-in forwards;
+}
+
+@keyframes open-up {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 80px; /* need to make this more dynamic - using scss based on number of pages  */
+    }
+}
+
+.accordion .close-down {
+    animation: close-down 0.8s ease-out forwards;
+}
+
+@keyframes close-down {
+    0% {
+        height: 80px;  /* need to make this more dynamic - using scss based on number of pages  */
+    }
+
+    100% {
+        height: 0;
+    }
+}
